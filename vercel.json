@@ -1,4 +1,10 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/customer-assets/40.png"
+    }
+  ]
 }
