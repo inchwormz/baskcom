@@ -1,0 +1,423 @@
+{
+  "generated_at": "2026-05-01T09:41:55.569Z",
+  "source": "C:\\Users\\OEM\\Projects\\baskobjects\\images\\bask-catalogue",
+  "count": 52,
+  "products": [
+    {
+      "slug": "korte-bedside-table-oak-white",
+      "name": "Körte bedside table, Oak & White",
+      "category": "Bedside Table",
+      "price": "$79",
+      "image": "/product-images/korte-bedside-table-oak-white.jpg",
+      "detailUrl": "/products/korte-bedside-table-oak-white/"
+    },
+    {
+      "slug": "niso-bedside-table-oak",
+      "name": "Niso Bedside Table, Oak",
+      "category": "Bedside Table",
+      "price": "$99",
+      "image": "/product-images/niso-bedside-table-oak.jpg",
+      "detailUrl": "/products/niso-bedside-table-oak/"
+    },
+    {
+      "slug": "orel-bedside-table-claro-walnut",
+      "name": "Ørel Bedside Table, Claro Walnut",
+      "category": "Bedside Table",
+      "price": "$199",
+      "image": "/product-images/orel-bedside-table-claro-walnut.jpg",
+      "detailUrl": "/products/orel-bedside-table-claro-walnut/"
+    },
+    {
+      "slug": "solve-2-drawer-bedside-table-oak",
+      "name": "Sølve 2-drawer Bedside Table, Oak",
+      "category": "Bedside Table",
+      "price": "$109",
+      "image": "/product-images/solve-2-drawer-bedside-table-oak.jpg",
+      "detailUrl": "/products/solve-2-drawer-bedside-table-oak/"
+    },
+    {
+      "slug": "stodd-bedside-table-oak",
+      "name": "Stödd Bedside Table, Oak",
+      "category": "Bedside Table",
+      "price": "$89",
+      "image": "/product-images/stodd-bedside-table-oak.jpg",
+      "detailUrl": "/products/stodd-bedside-table-oak/"
+    },
+    {
+      "slug": "stodd-bedside-table-oak-and-white",
+      "name": "Stödd Bedside Table, Oak and White",
+      "category": "Bedside Table",
+      "price": "$89",
+      "image": "/product-images/stodd-bedside-table-oak-and-white.jpg",
+      "detailUrl": "/products/stodd-bedside-table-oak-and-white/"
+    },
+    {
+      "slug": "vaela-bedside-table-grey-oak",
+      "name": "Væla Bedside Table, Grey Oak",
+      "category": "Bedside Table",
+      "price": "$139",
+      "image": "/product-images/vaela-bedside-table-grey-oak.jpg",
+      "detailUrl": "/products/vaela-bedside-table-grey-oak/"
+    },
+    {
+      "slug": "eira-coffee-table-06m",
+      "name": "Eira Coffee Table, 0.6M",
+      "category": "Coffee Table",
+      "price": "$199",
+      "image": "/product-images/eira-coffee-table-06m.jpg",
+      "detailUrl": "/products/eira-coffee-table-06m/"
+    },
+    {
+      "slug": "eira-coffee-table-12m",
+      "name": "Eira Coffee Table, 1.2M",
+      "category": "Coffee Table",
+      "price": "$399",
+      "image": "/product-images/eira-coffee-table-12m.jpg",
+      "detailUrl": "/products/eira-coffee-table-12m/"
+    },
+    {
+      "slug": "olv-coffee-table-1m-white",
+      "name": "Olv Coffee Table, 1M, White",
+      "category": "Coffee Table",
+      "price": "$179",
+      "image": "/product-images/olv-coffee-table-1m-white.jpg",
+      "detailUrl": "/products/olv-coffee-table-1m-white/"
+    },
+    {
+      "slug": "orel-blade-coffee-table",
+      "name": "Ørel Blade Coffee Table",
+      "category": "Coffee Table",
+      "price": "$239",
+      "image": "/product-images/orel-blade-coffee-table.jpg",
+      "detailUrl": "/products/orel-blade-coffee-table/"
+    },
+    {
+      "slug": "lekka-foldable-dining-chair-with-cushion-seat-wood-beige-set-of-2",
+      "name": "Lekka Foldable Dining Chair with cushion seat, Wood & Beige, Set of 2",
+      "category": "Dining Chair",
+      "price": "$179",
+      "image": "/product-images/lekka-foldable-dining-chair-with-cushion-seat-wood-beige-set-of-2.jpg",
+      "detailUrl": "/products/lekka-foldable-dining-chair-with-cushion-seat-wood-beige-set-of-2/"
+    },
+    {
+      "slug": "lekka-foldable-dining-chair-white-set-of-2",
+      "name": "Lekka Foldable Dining Chair, White, Set of 2",
+      "category": "Dining Chair",
+      "price": "$149",
+      "image": "/product-images/lekka-foldable-dining-chair-white-set-of-2.jpg",
+      "detailUrl": "/products/lekka-foldable-dining-chair-white-set-of-2/"
+    },
+    {
+      "slug": "lekka-foldable-dining-chair-wood-set-of-2",
+      "name": "Lekka Foldable Dining Chair, Wood, Set of 2",
+      "category": "Dining Chair",
+      "price": "$149",
+      "image": "/product-images/lekka-foldable-dining-chair-wood-set-of-2.jpg",
+      "detailUrl": "/products/lekka-foldable-dining-chair-wood-set-of-2/"
+    },
+    {
+      "slug": "ljon-c-dining-chair-dark-grey-set-of-2",
+      "name": "Ljon -C Dining Chair, Dark Grey, Set of 2",
+      "category": "Dining Chair",
+      "price": "$399",
+      "image": "/product-images/ljon-c-dining-chair-dark-grey-set-of-2.jpg",
+      "detailUrl": "/products/ljon-c-dining-chair-dark-grey-set-of-2/"
+    },
+    {
+      "slug": "ljon-c-dining-chair-light-grey-set-of-2",
+      "name": "Ljon -C Dining Chair, Light Grey, Set of 2",
+      "category": "Dining Chair",
+      "price": "$399",
+      "image": "/product-images/ljon-c-dining-chair-light-grey-set-of-2.jpg",
+      "detailUrl": "/products/ljon-c-dining-chair-light-grey-set-of-2/"
+    },
+    {
+      "slug": "orel-dining-chair-blackset-of-2",
+      "name": "Ørel Dining Chair, Black(Set of 2)",
+      "category": "Dining Chair",
+      "price": "$299",
+      "image": "/product-images/orel-dining-chair-blackset-of-2.jpg",
+      "detailUrl": "/products/orel-dining-chair-blackset-of-2/"
+    },
+    {
+      "slug": "orel-dining-chair-walnutset-of-2",
+      "name": "Ørel Dining Chair, Walnut(Set of 2)",
+      "category": "Dining Chair",
+      "price": "$299",
+      "image": "/product-images/orel-dining-chair-walnutset-of-2.jpg",
+      "detailUrl": "/products/orel-dining-chair-walnutset-of-2/"
+    },
+    {
+      "slug": "arma-dining-table-claro-walnut-14m",
+      "name": "Årma Dining Table, Claro Walnut, 1.4M",
+      "category": "Dining Table",
+      "price": "$439",
+      "image": "/product-images/arma-dining-table-claro-walnut-14m.jpg",
+      "detailUrl": "/products/arma-dining-table-claro-walnut-14m/"
+    },
+    {
+      "slug": "arma-dining-table-claro-walnut-16m",
+      "name": "Årma Dining Table, Claro Walnut, 1.6M",
+      "category": "Dining Table",
+      "price": "$499",
+      "image": "/product-images/arma-dining-table-claro-walnut-16m.jpg",
+      "detailUrl": "/products/arma-dining-table-claro-walnut-16m/"
+    },
+    {
+      "slug": "arma-dining-table-claro-walnut-18m",
+      "name": "Årma Dining Table, Claro Walnut, 1.8M",
+      "category": "Dining Table",
+      "price": "$569",
+      "image": "/product-images/arma-dining-table-claro-walnut-18m.jpg",
+      "detailUrl": "/products/arma-dining-table-claro-walnut-18m/"
+    },
+    {
+      "slug": "arma-round-dining-table-12m",
+      "name": "Årma Round Dining Table, 1.2M",
+      "category": "Dining Table",
+      "price": "$829",
+      "image": "/product-images/arma-round-dining-table-12m.jpg",
+      "detailUrl": "/products/arma-round-dining-table-12m/"
+    },
+    {
+      "slug": "bjorn-dining-table-16m",
+      "name": "Björn Dining Table, 1.6M",
+      "category": "Dining Table",
+      "price": "$799",
+      "image": "/product-images/bjorn-dining-table-16m.jpg",
+      "detailUrl": "/products/bjorn-dining-table-16m/"
+    },
+    {
+      "slug": "eira-dining-table-14m",
+      "name": "Eira Dining Table, 1.4M",
+      "category": "Dining Table",
+      "price": "$599",
+      "image": "/product-images/eira-dining-table-14m.jpg",
+      "detailUrl": "/products/eira-dining-table-14m/"
+    },
+    {
+      "slug": "eira-dining-table-16m",
+      "name": "Eira Dining Table, 1.6M",
+      "category": "Dining Table",
+      "price": "$699",
+      "image": "/product-images/eira-dining-table-16m.jpg",
+      "detailUrl": "/products/eira-dining-table-16m/"
+    },
+    {
+      "slug": "eira-dining-table-18m",
+      "name": "Eira Dining Table, 1.8M",
+      "category": "Dining Table",
+      "price": "$799",
+      "image": "/product-images/eira-dining-table-18m.jpg",
+      "detailUrl": "/products/eira-dining-table-18m/"
+    },
+    {
+      "slug": "legno-solidwood-dining-table-16m-wood",
+      "name": "Légno Solidwood Dining Table, 1.6M Wood",
+      "category": "Dining Table",
+      "price": "$499",
+      "image": "/product-images/legno-solidwood-dining-table-16m-wood.jpg",
+      "detailUrl": "/products/legno-solidwood-dining-table-16m-wood/"
+    },
+    {
+      "slug": "lekka-foldable-dining-table-14m-oak",
+      "name": "Lekka Foldable Dining Table, 1.4M, Oak",
+      "category": "Dining Table",
+      "price": "$299",
+      "image": "/product-images/lekka-foldable-dining-table-14m-oak.jpg",
+      "detailUrl": "/products/lekka-foldable-dining-table-14m-oak/"
+    },
+    {
+      "slug": "moldar-dining-table-14m",
+      "name": "Moldar Dining Table, 1.4M",
+      "category": "Dining Table",
+      "price": "$239",
+      "image": "/product-images/moldar-dining-table-14m.jpg",
+      "detailUrl": "/products/moldar-dining-table-14m/"
+    },
+    {
+      "slug": "orel-blade-dining-table-14m",
+      "name": "Ørel Blade Dining Table 1.4M",
+      "category": "Dining Table",
+      "price": "$369",
+      "image": "/product-images/orel-blade-dining-table-14m.jpg",
+      "detailUrl": "/products/orel-blade-dining-table-14m/"
+    },
+    {
+      "slug": "orel-blade-dining-table-16m",
+      "name": "Ørel Blade Dining Table 1.6M",
+      "category": "Dining Table",
+      "price": "$399",
+      "image": "/product-images/orel-blade-dining-table-16m.jpg",
+      "detailUrl": "/products/orel-blade-dining-table-16m/"
+    },
+    {
+      "slug": "orel-standard-dining-table-claro-walnut-18m",
+      "name": "Ørel Standard Dining Table, Claro Walnut, 1.8M",
+      "category": "Dining Table",
+      "price": "$599",
+      "image": "/product-images/orel-standard-dining-table-claro-walnut-18m.jpg",
+      "detailUrl": "/products/orel-standard-dining-table-claro-walnut-18m/"
+    },
+    {
+      "slug": "borj-display-cabinet-12m-oak",
+      "name": "Borj display cabinet, 1.2M, OAK",
+      "category": "Display Cabinet Rack",
+      "price": "$369",
+      "image": "/product-images/borj-display-cabinet-12m-oak.jpg",
+      "detailUrl": "/products/borj-display-cabinet-12m-oak/"
+    },
+    {
+      "slug": "eira-dresser-with-1-drawer",
+      "name": "Eira Dresser with 1 drawer",
+      "category": "Dressing Table",
+      "price": "$239",
+      "image": "/product-images/eira-dresser-with-1-drawer.jpg",
+      "detailUrl": "/products/eira-dresser-with-1-drawer/"
+    },
+    {
+      "slug": "eira-dresser-with-2-drawer",
+      "name": "Eira Dresser with 2 drawer",
+      "category": "Dressing Table",
+      "price": "$339",
+      "image": "/product-images/eira-dresser-with-2-drawer.jpg",
+      "detailUrl": "/products/eira-dresser-with-2-drawer/"
+    },
+    {
+      "slug": "nela-dresser-table-12m-oak",
+      "name": "Nelä dresser table, 1.2M, Oak",
+      "category": "Dressing Table",
+      "price": "$149",
+      "image": "/product-images/nela-dresser-table-12m-oak.jpg",
+      "detailUrl": "/products/nela-dresser-table-12m-oak/"
+    },
+    {
+      "slug": "saess-dining-chair-wood-set-of-2",
+      "name": "Sæss Dining Chair, Wood, Set of 2",
+      "category": "Office Chair",
+      "price": "$299",
+      "image": "/product-images/saess-dining-chair-wood-set-of-2.jpg",
+      "detailUrl": "/products/saess-dining-chair-wood-set-of-2/"
+    },
+    {
+      "slug": "sanz-dining-chair-wood-set-of-2",
+      "name": "Sänz Dining Chair, Wood, Set of 2",
+      "category": "Office Chair",
+      "price": "$259",
+      "image": "/product-images/sanz-dining-chair-wood-set-of-2.jpg",
+      "detailUrl": "/products/sanz-dining-chair-wood-set-of-2/"
+    },
+    {
+      "slug": "arke-office-desk-with-drawer-oak-and-white",
+      "name": "Arke Office Desk with Drawer, Oak and White",
+      "category": "Office Furniture",
+      "price": "$279",
+      "image": "/product-images/arke-office-desk-with-drawer-oak-and-white.jpg",
+      "detailUrl": "/products/arke-office-desk-with-drawer-oak-and-white/"
+    },
+    {
+      "slug": "iselin-shoe-cabinet-oak-white",
+      "name": "Iselin Shoe Cabinet, Oak & White",
+      "category": "Shoe Cabinet",
+      "price": "$139",
+      "image": "/product-images/iselin-shoe-cabinet-oak-white.jpg",
+      "detailUrl": "/products/iselin-shoe-cabinet-oak-white/"
+    },
+    {
+      "slug": "porta-side-cabinet-oak",
+      "name": "Pörta side Cabinet, Oak",
+      "category": "Side Table",
+      "price": "$129",
+      "image": "/product-images/porta-side-cabinet-oak.jpg",
+      "detailUrl": "/products/porta-side-cabinet-oak/"
+    },
+    {
+      "slug": "porta-side-cabinet-virginia-walnut",
+      "name": "Pörta side Cabinet, Virginia Walnut",
+      "category": "Side Table",
+      "price": "$129",
+      "image": "/product-images/porta-side-cabinet-virginia-walnut.jpg",
+      "detailUrl": "/products/porta-side-cabinet-virginia-walnut/"
+    },
+    {
+      "slug": "eira-sideboard",
+      "name": "Eira Sideboard",
+      "category": "Sideboard",
+      "price": "$899",
+      "image": "/product-images/eira-sideboard.jpg",
+      "detailUrl": "/products/eira-sideboard/"
+    },
+    {
+      "slug": "orel-sideboard",
+      "name": "Ørel Sideboard",
+      "category": "Sideboard",
+      "price": "$459",
+      "image": "/product-images/orel-sideboard.jpg",
+      "detailUrl": "/products/orel-sideboard/"
+    },
+    {
+      "slug": "vaela-sideboard-grey-oak",
+      "name": "Væla Sideboard, Grey Oak",
+      "category": "Sideboard",
+      "price": "$539",
+      "image": "/product-images/vaela-sideboard-grey-oak.jpg",
+      "detailUrl": "/products/vaela-sideboard-grey-oak/"
+    },
+    {
+      "slug": "dalen-dresser-with-stool-and-mirror",
+      "name": "Dalen Dresser with Stool and Mirror",
+      "category": "Uncategorised",
+      "price": "$1,359",
+      "image": "/product-images/dalen-dresser-with-stool-and-mirror.jpg",
+      "detailUrl": "/products/dalen-dresser-with-stool-and-mirror/"
+    },
+    {
+      "slug": "legno-dining-bench-14m-claro-walnut",
+      "name": "Légno Dining Bench, 1.4M, Claro Walnut",
+      "category": "Uncategorised",
+      "price": "$249",
+      "image": "/product-images/legno-dining-bench-14m-claro-walnut.jpg",
+      "detailUrl": "/products/legno-dining-bench-14m-claro-walnut/"
+    },
+    {
+      "slug": "legno-dining-bench-14m-wood",
+      "name": "Légno Dining Bench, 1.4M, Wood",
+      "category": "Uncategorised",
+      "price": "$249",
+      "image": "/product-images/legno-dining-bench-14m-wood.jpg",
+      "detailUrl": "/products/legno-dining-bench-14m-wood/"
+    },
+    {
+      "slug": "lodi-dining-chair-claro-walnutgrey-set-of-2",
+      "name": "Lödi Dining Chair, Claro Walnut/Grey, Set of 2",
+      "category": "Uncategorised",
+      "price": "$299",
+      "image": "/product-images/lodi-dining-chair-claro-walnutgrey-set-of-2.jpg",
+      "detailUrl": "/products/lodi-dining-chair-claro-walnutgrey-set-of-2/"
+    },
+    {
+      "slug": "lodi-dining-chair-woodgrey-set-of-2",
+      "name": "Lödi Dining Chair, Wood/Grey, Set of 2",
+      "category": "Uncategorised",
+      "price": "$299",
+      "image": "/product-images/lodi-dining-chair-woodgrey-set-of-2.jpg",
+      "detailUrl": "/products/lodi-dining-chair-woodgrey-set-of-2/"
+    },
+    {
+      "slug": "orel-coffee-table-claro-walnut",
+      "name": "Ørel Coffee Table, Claro walnut",
+      "category": "Uncategorised",
+      "price": "$399",
+      "image": "/product-images/orel-coffee-table-claro-walnut.jpg",
+      "detailUrl": "/products/orel-coffee-table-claro-walnut/"
+    },
+    {
+      "slug": "vaela-wardrobe",
+      "name": "Væla Wardrobe",
+      "category": "Wardrobe",
+      "price": "$599",
+      "image": "/product-images/vaela-wardrobe.jpg",
+      "detailUrl": "/products/vaela-wardrobe/"
+    }
+  ]
+}
