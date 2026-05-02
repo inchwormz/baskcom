@@ -178,7 +178,7 @@ function siteFooter() {
 
 function card(product) {
   return `<a class="bask-card" href="${product.detailUrl}">
-    <div class="bask-card__media"><img src="${product.image}" alt="${escapeHtml(product.name)}"></div>
+    <div class="bask-card__media"><img src="${product.image}" alt="${escapeHtml(product.name)}" width="1024" height="1280" loading="lazy" decoding="async"></div>
     <div class="bask-card__body">
       <div>
         <div class="bask-card__category">${escapeHtml(product.categoryLabel)}</div>
@@ -192,7 +192,7 @@ function card(product) {
 
 function heroCard(product, label = 'Featured Object') {
   return `<div class="bask-hero-card">
-    <img src="${product.image}" alt="${escapeHtml(product.name)}">
+    <img src="${product.image}" alt="${escapeHtml(product.name)}" width="1024" height="1280" decoding="async" fetchpriority="high">
     <div class="bask-hero-card__label"><span>${escapeHtml(label)}</span><span>${escapeHtml(product.name)}</span></div>
   </div>`;
 }
@@ -309,7 +309,7 @@ function buildPage(shellFile, main) {
 
 function buildSimpleContentPages(products) {
   const about = buildPage('about-us.html', `<main class="bask-page"><section class="bask-shell bask-hero"><div><div class="bask-eyebrow">About Bask</div><h1 class="bask-title">Objects for slower rooms.</h1><p class="bask-lede">Bask is a curated furniture storefront for New Zealand homes: restrained, practical, and edited around calm interiors rather than supplier noise.</p></div>${heroCard(products[4] || products[0], 'About')}</section></main>`);
-  const contact = buildPage('contact.html', `<main class="bask-page"><section class="bask-shell bask-hero"><div><div class="bask-eyebrow">Contact</div><h1 class="bask-title">Ask about an object.</h1><p class="bask-lede">For stock checks, delivery questions, and product details, send the product name and delivery region.</p><div class="bask-meta-row" style="margin-top:1.5rem"><a class="bask-button" href="mailto:hello@baskobjects.co.nz">hello@baskobjects.co.nz</a></div></div>${heroCard(products[5] || products[0], 'Enquiry ready')}</section></main>`);
+  const contact = buildPage('contact.html', `<main class="bask-page"><section class="bask-shell bask-hero bask-hero--contact"><div><div class="bask-eyebrow">Contact</div><h1 class="bask-title bask-title--action">Ask about an object.</h1><p class="bask-lede">For stock checks, delivery questions, and product details, send the product name and delivery region.</p><div class="bask-contact-actions"><a class="bask-button" href="mailto:hello@baskobjects.co.nz">hello@baskobjects.co.nz</a><span class="bask-note">Include the product name and delivery region so we can confirm stock quickly.</span></div></div>${heroCard(products[5] || products[0], 'Enquiry ready')}</section></main>`);
   write('about-us.html', about);
   write(path.join('about-us', 'index.html'), about);
   write('contact.html', contact);
