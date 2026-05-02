@@ -434,6 +434,17 @@
     margin-right: .25rem;
   }
 
+  .bask-meta-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .bask-meta-row .bask-pill,
+  .bask-meta-row .bask-button {
+    width: 100%;
+    justify-content: center;
+  }
+
   .bask-hero-card,
   .bask-feature {
     min-height: auto;
