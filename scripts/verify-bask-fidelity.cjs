@@ -9,7 +9,7 @@ fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ headless: true });
   const results = [], errors = [];
   try {
-    for (const width of [1440, 1280, 390]) {
+    if (!process.argv.includes('--regressions-only')) for (const width of [1440, 1280, 390]) {
       const page = await browser.newPage({ viewport: { width, height: width === 390 ? 844 : 1000 } });
       page.on('pageerror', error => errors.push(error.message));
       page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
@@ -72,6 +72,7 @@ fs.mkdirSync(output, { recursive: true });
       }
       await page.close();
     }
+    if (!process.argv.includes('--regressions-only')) {
     const reduced = await browser.newPage({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
     await reduced.goto(base, { waitUntil: 'networkidle' });await reduced.waitForTimeout(100);
     await reduced.locator('.hero-slider-thumbnail').nth(2).click();
@@ -80,6 +81,40 @@ fs.mkdirSync(output, { recursive: true });
     const first = await reduced.locator('.hero-slider-thumbnail.a').getAttribute('aria-label');await reduced.waitForTimeout(5300);
     assert(await reduced.locator('.hero-slider-thumbnail.a').getAttribute('aria-label') === first, 'reduced-motion carousel still auto-plays');
     await reduced.close();results.push({ route: '/', width: 390, reducedMotion: true, status: 'pass' });
+    }
+    const regression = await browser.newPage({viewport:{width:1440,height:1000}});
+    regression.on('pageerror',error=>errors.push(error.message));
+    await regression.goto(base+'/shop/#coffee',{waitUntil:'networkidle'});
+    assert(await regression.locator('[data-product-category]:visible').count()===5,'Coffee category link should show five coffee tables');
+    assert(await regression.locator('[data-product-category]:visible').evaluateAll(cards=>cards.every(card=>card.dataset.productCategory==='Coffee Table')),'Coffee link shows unrelated products');
+    await regression.goto(base+'/shop/#orel',{waitUntil:'networkidle'});
+    assert(await regression.locator('[data-product-category]:visible').count()===9,'Ørel hero link should show nine Ørel pieces');
+    assert(await regression.locator('#bask-product-search').inputValue()==='Ørel','Collection context missing from search');
+    await regression.goto(base+'/shop/#halda',{waitUntil:'networkidle'});
+    assert(await regression.locator('.bask-no-results a').getAttribute('href')==='mailto:hello@baskobjects.co.nz?subject=Collection%20enquiry%3A%20Halda','Unpictured collection must offer a contextual Bask enquiry');
+    await regression.goto(base+'/shop/',{waitUntil:'networkidle'});
+    await regression.locator('#bask-product-search').focus();await regression.keyboard.press('Escape');
+    assert(await regression.locator('#bask-product-search').evaluate(e=>e===document.activeElement),'Escape in search stole focus');
+    const first=await regression.locator('.card-product').nth(0).boundingBox(),second=await regression.locator('.card-product').nth(1).boundingBox(),third=await regression.locator('.card-product').nth(2).boundingBox();
+    assert(second.x-first.x>first.width*1.8 && third.width>first.width*1.8,'Desktop catalogue lost the reference staggered/wide tiles');
+    await regression.setViewportSize({width:390,height:844});
+    assert(!await regression.locator('.bask-filters details').evaluate(e=>e.open),'Compact filters should initially collapse');
+    assert((await regression.locator('.card-product').first().boundingBox()).width>360,'Mobile product card should span the available width');
+    await regression.setViewportSize({width:1280,height:1000});
+    assert(await regression.locator('.bask-filters details').evaluate(e=>e.open),'Filters remained inaccessible after widening viewport');
+    await regression.goto(base+'/about/',{waitUntil:'networkidle'});await regression.setViewportSize({width:390,height:844});
+    const aboutPhoto=await regression.locator('.bask-about-photo').boundingBox();assert(Math.abs(aboutPhoto.y-376)<10,'Mobile About photograph is not aligned to reference');
+    await regression.goto(base,{waitUntil:'networkidle'});
+    assert(await regression.locator('.bask-highlight-body').evaluate(e=>getComputedStyle(e).gridTemplateColumns.split(' ').length)===1,'Mobile highlight text should stack');
+    await regression.setViewportSize({width:1440,height:1000});await regression.waitForTimeout(1600);
+    await regression.locator('.hero-slider-thumbnail').nth(1).click();
+    const wipe=await regression.locator('.hero-slider-image').nth(1).evaluate(e=>{const animation=e.getAnimations()[0];animation.pause();animation.currentTime=500;return{duration:animation.effect.getTiming().duration,x:new DOMMatrix(getComputedStyle(e).transform).m41};});
+    assert(wipe.duration===1500&&wipe.x>80&&wipe.x<400,'Hero wipe does not follow the captured reference timing/easing');
+    await regression.locator('.hero-slider-thumbnail').nth(3).click();await regression.waitForTimeout(1750);
+    assert(await regression.locator('.hero-slider-thumbnail').nth(3).getAttribute('aria-selected')==='true','Interrupted custom wipe failed to settle on latest selection');
+    await regression.close();results.push({route:'reference journeys',status:'pass'});
+    const touch=await browser.newPage({viewport:{width:1280,height:1000},hasTouch:true});await touch.goto(base+'/shop/',{waitUntil:'networkidle'});
+    assert(await touch.locator('.bask-filters details').evaluate(e=>e.open),'Wide touch devices must retain accessible filters');await touch.close();results.push({route:'wide touch filters',status:'pass'});
     assert(!errors.length, `browser errors: ${errors.join('; ')}`);
     console.log(JSON.stringify({ status:'PASS', pagesAndStates:results.length, browserErrors:errors.length, output },null,2));
   } catch (error) {
