@@ -65,6 +65,7 @@ fs.mkdirSync(output, { recursive: true });
         }
         await page.evaluate(async () => { for(let y=0;y<document.documentElement.scrollHeight;y+=750){scrollTo(0,y);await new Promise(resolve=>setTimeout(resolve,35));}scrollTo(0,0); });
         await page.waitForTimeout(1500);
+        await page.waitForFunction(() => [...document.images].every(image => image.complete), {}, { timeout: 30000 });
         const broken = await page.evaluate(() => [...document.images].filter(image => !image.complete || !image.naturalWidth).map(image => image.src));
         assert(!broken.length, `${route}: broken images ${broken.join(', ')}`);
         await page.screenshot({ path: path.join(output, `${route === '/' ? 'home' : route.split('/')[1]}-${width}.png`), fullPage: true });
