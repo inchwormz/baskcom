@@ -37,6 +37,7 @@
     toggle(menu, menuPanel, open);menu.firstElementChild.textContent = open ? 'Close' : 'Menu';
   });
   collections?.addEventListener('click', () => toggle(collections, collectionsPanel, collections.getAttribute('aria-expanded') !== 'true'));
+  all('#bask-collections a,#bask-mobile-menu a').forEach(link=>link.addEventListener('click',()=>{toggle(menu,menuPanel,false);menu.firstElementChild.textContent='Menu';toggle(collections,collectionsPanel,false);}));
   const products = document.querySelector('.bask-products');
   products?.addEventListener('pointerenter', () => { if (!coarse.matches) toggle(collections, collectionsPanel, true); });
   document.querySelector('.bask-header')?.addEventListener('pointerleave', () => { if (!coarse.matches) toggle(collections, collectionsPanel, false); });
@@ -141,8 +142,11 @@
     }
     tilePositions();
   }
-  filterButtons.forEach(button=>button.addEventListener('click',()=>{selectedCategories=button.dataset.filterCategory?[button.dataset.filterCategory]:[];requestedCollection=null;filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filterProducts();}));
-  search?.addEventListener('input',()=>{requestedCollection=null;filterProducts();});
+  function clearFilterHash() {
+    if(location.hash)history.replaceState(history.state,'',location.pathname+location.search);
+  }
+  filterButtons.forEach(button=>button.addEventListener('click',()=>{selectedCategories=button.dataset.filterCategory?[button.dataset.filterCategory]:[];requestedCollection=null;clearFilterHash();filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filterProducts();}));
+  search?.addEventListener('input',()=>{requestedCollection=null;clearFilterHash();filterProducts();});
   const filterDetails = document.querySelector('.bask-filters details');
   if (filterDetails) {
     const compactFilters = matchMedia('(max-width:1023px)');filterDetails.open=!compactFilters.matches;
