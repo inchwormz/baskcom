@@ -1,0 +1,1384 @@
+{
+  "originalBytes": 24898638,
+  "defaultBytes": 6337802,
+  "images": [
+    {
+      "source": "/images/bask/bask_bedroom-q07s8t.jpg",
+      "width": 1568,
+      "height": 1046,
+      "fallback": "/images/responsive/5b3f4b8a5f64-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/5b3f4b8a5f64-480.webp",
+          "bytes": 14028
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/5b3f4b8a5f64-960.webp",
+          "bytes": 53074
+        },
+        {
+          "width": 1440,
+          "src": "/images/responsive/5b3f4b8a5f64-1440.webp",
+          "bytes": 105578
+        }
+      ]
+    },
+    {
+      "source": "/images/bask/HaldaBedsideTablewith2drawerbg_900x-69spy2.jpg",
+      "width": 900,
+      "height": 900,
+      "fallback": "/images/responsive/de9620a26391-900.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/de9620a26391-480.webp",
+          "bytes": 17278
+        },
+        {
+          "width": 900,
+          "src": "/images/responsive/de9620a26391-900.webp",
+          "bytes": 49048
+        }
+      ]
+    },
+    {
+      "source": "/images/bask/JBP3260_1_900x-c16wda.jpg",
+      "width": 900,
+      "height": 600,
+      "fallback": "/images/responsive/c87d31e952d5-900.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/c87d31e952d5-480.webp",
+          "bytes": 23414
+        },
+        {
+          "width": 900,
+          "src": "/images/responsive/c87d31e952d5-900.webp",
+          "bytes": 74972
+        }
+      ]
+    },
+    {
+      "source": "/images/bask/G5029-2_45-hxdw58.jpg",
+      "width": 1568,
+      "height": 1568,
+      "fallback": "/images/responsive/c03f7d65e3c7-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/c03f7d65e3c7-480.webp",
+          "bytes": 18300
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/c03f7d65e3c7-960.webp",
+          "bytes": 64884
+        },
+        {
+          "width": 1440,
+          "src": "/images/responsive/c03f7d65e3c7-1440.webp",
+          "bytes": 133818
+        }
+      ]
+    },
+    {
+      "source": "/images/bask/JBP3189_1-siz5cu.jpg",
+      "width": 1568,
+      "height": 1045,
+      "fallback": "/images/responsive/7b1db8e5ffd0-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/7b1db8e5ffd0-480.webp",
+          "bytes": 14682
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/7b1db8e5ffd0-960.webp",
+          "bytes": 40062
+        },
+        {
+          "width": 1440,
+          "src": "/images/responsive/7b1db8e5ffd0-1440.webp",
+          "bytes": 69770
+        }
+      ]
+    },
+    {
+      "source": "/product-images/arma-dining-table-claro-walnut-16m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/795788e4172e-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/795788e4172e-480.webp",
+          "bytes": 42802
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/795788e4172e-960.webp",
+          "bytes": 151506
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/795788e4172e-1024.webp",
+          "bytes": 174270
+        }
+      ]
+    },
+    {
+      "source": "/product-images/orel-coffee-table-claro-walnut.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/a61c7f6406ef-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/a61c7f6406ef-480.webp",
+          "bytes": 42434
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/a61c7f6406ef-960.webp",
+          "bytes": 168774
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/a61c7f6406ef-1024.webp",
+          "bytes": 194908
+        }
+      ]
+    },
+    {
+      "source": "/product-images/vaela-wardrobe.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/ba5372ffc7b2-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/ba5372ffc7b2-480.webp",
+          "bytes": 20800
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/ba5372ffc7b2-960.webp",
+          "bytes": 69086
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/ba5372ffc7b2-1024.webp",
+          "bytes": 83296
+        }
+      ]
+    },
+    {
+      "source": "/product-images/niso-bedside-table-oak.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/d5317392d59d-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/d5317392d59d-480.webp",
+          "bytes": 26710
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/d5317392d59d-960.webp",
+          "bytes": 94830
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/d5317392d59d-1024.webp",
+          "bytes": 109560
+        }
+      ]
+    },
+    {
+      "source": "/product-images/iselin-shoe-cabinet-oak-white.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/1fdb1d9872cd-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/1fdb1d9872cd-480.webp",
+          "bytes": 15058
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/1fdb1d9872cd-960.webp",
+          "bytes": 43224
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/1fdb1d9872cd-1024.webp",
+          "bytes": 48564
+        }
+      ]
+    },
+    {
+      "source": "/product-images/nela-dresser-table-12m-oak.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/9eb7e0e32bab-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/9eb7e0e32bab-480.webp",
+          "bytes": 22350
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/9eb7e0e32bab-960.webp",
+          "bytes": 65056
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/9eb7e0e32bab-1024.webp",
+          "bytes": 75292
+        }
+      ]
+    },
+    {
+      "source": "/images/bask/JBP2976_3_800x-v32r1z.jpg",
+      "width": 800,
+      "height": 533,
+      "fallback": "/images/responsive/e1d4b29cbadd-800.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/e1d4b29cbadd-480.webp",
+          "bytes": 13652
+        },
+        {
+          "width": 800,
+          "src": "/images/responsive/e1d4b29cbadd-800.webp",
+          "bytes": 36392
+        }
+      ]
+    },
+    {
+      "source": "/images/bask/JBP3031_1_600x-ycyfml.jpg",
+      "width": 600,
+      "height": 600,
+      "fallback": "/images/responsive/126daf8fdd9c-600.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/126daf8fdd9c-480.webp",
+          "bytes": 44608
+        },
+        {
+          "width": 600,
+          "src": "/images/responsive/126daf8fdd9c-600.webp",
+          "bytes": 65484
+        }
+      ]
+    },
+    {
+      "source": "/product-images/korte-bedside-table-oak-white.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/9f7aced43cb1-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/9f7aced43cb1-480.webp",
+          "bytes": 27922
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/9f7aced43cb1-960.webp",
+          "bytes": 98058
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/9f7aced43cb1-1024.webp",
+          "bytes": 114634
+        }
+      ]
+    },
+    {
+      "source": "/product-images/orel-bedside-table-claro-walnut.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/4884357f6dbc-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/4884357f6dbc-480.webp",
+          "bytes": 29334
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/4884357f6dbc-960.webp",
+          "bytes": 99468
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/4884357f6dbc-1024.webp",
+          "bytes": 114284
+        }
+      ]
+    },
+    {
+      "source": "/product-images/solve-2-drawer-bedside-table-oak.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/83f9fae8dd44-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/83f9fae8dd44-480.webp",
+          "bytes": 27128
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/83f9fae8dd44-960.webp",
+          "bytes": 99010
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/83f9fae8dd44-1024.webp",
+          "bytes": 114476
+        }
+      ]
+    },
+    {
+      "source": "/product-images/stodd-bedside-table-oak.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/adb66ba4c0bd-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/adb66ba4c0bd-480.webp",
+          "bytes": 26184
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/adb66ba4c0bd-960.webp",
+          "bytes": 100466
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/adb66ba4c0bd-1024.webp",
+          "bytes": 116856
+        }
+      ]
+    },
+    {
+      "source": "/product-images/stodd-bedside-table-oak-and-white.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/113361e7253f-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/113361e7253f-480.webp",
+          "bytes": 25072
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/113361e7253f-960.webp",
+          "bytes": 88170
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/113361e7253f-1024.webp",
+          "bytes": 103510
+        }
+      ]
+    },
+    {
+      "source": "/product-images/vaela-bedside-table-grey-oak.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/69444de94084-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/69444de94084-480.webp",
+          "bytes": 39458
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/69444de94084-960.webp",
+          "bytes": 199838
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/69444de94084-1024.webp",
+          "bytes": 241896
+        }
+      ]
+    },
+    {
+      "source": "/product-images/eira-coffee-table-06m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/0b614b1fd044-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/0b614b1fd044-480.webp",
+          "bytes": 43292
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/0b614b1fd044-960.webp",
+          "bytes": 169780
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/0b614b1fd044-1024.webp",
+          "bytes": 196112
+        }
+      ]
+    },
+    {
+      "source": "/product-images/eira-coffee-table-12m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/a06a84428288-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/a06a84428288-480.webp",
+          "bytes": 56976
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/a06a84428288-960.webp",
+          "bytes": 196798
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/a06a84428288-1024.webp",
+          "bytes": 224156
+        }
+      ]
+    },
+    {
+      "source": "/product-images/olv-coffee-table-1m-white.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/4e0ad2e8f5fd-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/4e0ad2e8f5fd-480.webp",
+          "bytes": 58344
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/4e0ad2e8f5fd-960.webp",
+          "bytes": 200546
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/4e0ad2e8f5fd-1024.webp",
+          "bytes": 228394
+        }
+      ]
+    },
+    {
+      "source": "/product-images/orel-blade-coffee-table.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/be9812686e5f-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/be9812686e5f-480.webp",
+          "bytes": 60384
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/be9812686e5f-960.webp",
+          "bytes": 224708
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/be9812686e5f-1024.webp",
+          "bytes": 256062
+        }
+      ]
+    },
+    {
+      "source": "/product-images/lekka-foldable-dining-chair-with-cushion-seat-wood-beige-set-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/42adeb41ed32-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/42adeb41ed32-480.webp",
+          "bytes": 23232
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/42adeb41ed32-960.webp",
+          "bytes": 75160
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/42adeb41ed32-1024.webp",
+          "bytes": 83702
+        }
+      ]
+    },
+    {
+      "source": "/product-images/lekka-foldable-dining-chair-white-set-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/ebfe33f02794-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/ebfe33f02794-480.webp",
+          "bytes": 24978
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/ebfe33f02794-960.webp",
+          "bytes": 82278
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/ebfe33f02794-1024.webp",
+          "bytes": 94412
+        }
+      ]
+    },
+    {
+      "source": "/product-images/lekka-foldable-dining-chair-wood-set-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/2359f9a4c304-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/2359f9a4c304-480.webp",
+          "bytes": 27128
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/2359f9a4c304-960.webp",
+          "bytes": 101056
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/2359f9a4c304-1024.webp",
+          "bytes": 119068
+        }
+      ]
+    },
+    {
+      "source": "/product-images/ljon-c-dining-chair-dark-grey-set-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/60a6195574d0-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/60a6195574d0-480.webp",
+          "bytes": 22154
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/60a6195574d0-960.webp",
+          "bytes": 75518
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/60a6195574d0-1024.webp",
+          "bytes": 88272
+        }
+      ]
+    },
+    {
+      "source": "/product-images/ljon-c-dining-chair-light-grey-set-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/181d5625adeb-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/181d5625adeb-480.webp",
+          "bytes": 23020
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/181d5625adeb-960.webp",
+          "bytes": 84352
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/181d5625adeb-1024.webp",
+          "bytes": 93086
+        }
+      ]
+    },
+    {
+      "source": "/product-images/orel-dining-chair-blackset-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/49f711a49f47-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/49f711a49f47-480.webp",
+          "bytes": 24096
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/49f711a49f47-960.webp",
+          "bytes": 89510
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/49f711a49f47-1024.webp",
+          "bytes": 104580
+        }
+      ]
+    },
+    {
+      "source": "/product-images/orel-dining-chair-walnutset-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/a82c55d0d8af-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/a82c55d0d8af-480.webp",
+          "bytes": 23800
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/a82c55d0d8af-960.webp",
+          "bytes": 86958
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/a82c55d0d8af-1024.webp",
+          "bytes": 101440
+        }
+      ]
+    },
+    {
+      "source": "/product-images/arma-dining-table-claro-walnut-14m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/77289b844da1-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/77289b844da1-480.webp",
+          "bytes": 51574
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/77289b844da1-960.webp",
+          "bytes": 187692
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/77289b844da1-1024.webp",
+          "bytes": 215530
+        }
+      ]
+    },
+    {
+      "source": "/product-images/arma-dining-table-claro-walnut-18m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/c89d79d990f4-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/c89d79d990f4-480.webp",
+          "bytes": 41830
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/c89d79d990f4-960.webp",
+          "bytes": 148854
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/c89d79d990f4-1024.webp",
+          "bytes": 170788
+        }
+      ]
+    },
+    {
+      "source": "/product-images/arma-round-dining-table-12m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/0c0c0b7bcdc5-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/0c0c0b7bcdc5-480.webp",
+          "bytes": 29522
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/0c0c0b7bcdc5-960.webp",
+          "bytes": 93498
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/0c0c0b7bcdc5-1024.webp",
+          "bytes": 111372
+        }
+      ]
+    },
+    {
+      "source": "/product-images/bjorn-dining-table-16m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/966838ee399c-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/966838ee399c-480.webp",
+          "bytes": 47600
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/966838ee399c-960.webp",
+          "bytes": 167324
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/966838ee399c-1024.webp",
+          "bytes": 191546
+        }
+      ]
+    },
+    {
+      "source": "/product-images/eira-dining-table-14m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/07689d83d356-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/07689d83d356-480.webp",
+          "bytes": 40574
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/07689d83d356-960.webp",
+          "bytes": 141786
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/07689d83d356-1024.webp",
+          "bytes": 162204
+        }
+      ]
+    },
+    {
+      "source": "/product-images/eira-dining-table-16m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/bd200954f11e-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/bd200954f11e-480.webp",
+          "bytes": 47358
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/bd200954f11e-960.webp",
+          "bytes": 166074
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/bd200954f11e-1024.webp",
+          "bytes": 190028
+        }
+      ]
+    },
+    {
+      "source": "/product-images/eira-dining-table-18m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/bf7743c0cf37-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/bf7743c0cf37-480.webp",
+          "bytes": 47064
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/bf7743c0cf37-960.webp",
+          "bytes": 165794
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/bf7743c0cf37-1024.webp",
+          "bytes": 189174
+        }
+      ]
+    },
+    {
+      "source": "/product-images/legno-solidwood-dining-table-16m-wood.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/e6f4b478fe7a-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/e6f4b478fe7a-480.webp",
+          "bytes": 39822
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/e6f4b478fe7a-960.webp",
+          "bytes": 148676
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/e6f4b478fe7a-1024.webp",
+          "bytes": 170460
+        }
+      ]
+    },
+    {
+      "source": "/product-images/lekka-foldable-dining-table-14m-oak.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/47edadb1c7c2-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/47edadb1c7c2-480.webp",
+          "bytes": 45930
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/47edadb1c7c2-960.webp",
+          "bytes": 149252
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/47edadb1c7c2-1024.webp",
+          "bytes": 169832
+        }
+      ]
+    },
+    {
+      "source": "/product-images/moldar-dining-table-14m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/749e86f1b245-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/749e86f1b245-480.webp",
+          "bytes": 38094
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/749e86f1b245-960.webp",
+          "bytes": 139790
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/749e86f1b245-1024.webp",
+          "bytes": 161586
+        }
+      ]
+    },
+    {
+      "source": "/product-images/orel-blade-dining-table-14m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/2d552e4273e6-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/2d552e4273e6-480.webp",
+          "bytes": 34108
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/2d552e4273e6-960.webp",
+          "bytes": 100762
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/2d552e4273e6-1024.webp",
+          "bytes": 120036
+        }
+      ]
+    },
+    {
+      "source": "/product-images/orel-blade-dining-table-16m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/01140d2dcd92-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/01140d2dcd92-480.webp",
+          "bytes": 35216
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/01140d2dcd92-960.webp",
+          "bytes": 109540
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/01140d2dcd92-1024.webp",
+          "bytes": 129824
+        }
+      ]
+    },
+    {
+      "source": "/product-images/orel-standard-dining-table-claro-walnut-18m.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/90328b42bed8-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/90328b42bed8-480.webp",
+          "bytes": 41702
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/90328b42bed8-960.webp",
+          "bytes": 152292
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/90328b42bed8-1024.webp",
+          "bytes": 175466
+        }
+      ]
+    },
+    {
+      "source": "/product-images/borj-display-cabinet-12m-oak.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/b45e5761d1a6-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/b45e5761d1a6-480.webp",
+          "bytes": 18388
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/b45e5761d1a6-960.webp",
+          "bytes": 56526
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/b45e5761d1a6-1024.webp",
+          "bytes": 64488
+        }
+      ]
+    },
+    {
+      "source": "/product-images/eira-dresser-with-1-drawer.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/6f756ffdc98b-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/6f756ffdc98b-480.webp",
+          "bytes": 28306
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/6f756ffdc98b-960.webp",
+          "bytes": 103798
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/6f756ffdc98b-1024.webp",
+          "bytes": 120558
+        }
+      ]
+    },
+    {
+      "source": "/product-images/eira-dresser-with-2-drawer.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/b7b319393363-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/b7b319393363-480.webp",
+          "bytes": 24210
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/b7b319393363-960.webp",
+          "bytes": 87504
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/b7b319393363-1024.webp",
+          "bytes": 101832
+        }
+      ]
+    },
+    {
+      "source": "/product-images/saess-dining-chair-wood-set-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/c79069f05300-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/c79069f05300-480.webp",
+          "bytes": 28774
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/c79069f05300-960.webp",
+          "bytes": 120106
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/c79069f05300-1024.webp",
+          "bytes": 144662
+        }
+      ]
+    },
+    {
+      "source": "/product-images/sanz-dining-chair-wood-set-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/9df47f445ae6-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/9df47f445ae6-480.webp",
+          "bytes": 18826
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/9df47f445ae6-960.webp",
+          "bytes": 69658
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/9df47f445ae6-1024.webp",
+          "bytes": 83242
+        }
+      ]
+    },
+    {
+      "source": "/product-images/arke-office-desk-with-drawer-oak-and-white.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/0d042559e4d0-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/0d042559e4d0-480.webp",
+          "bytes": 19100
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/0d042559e4d0-960.webp",
+          "bytes": 55160
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/0d042559e4d0-1024.webp",
+          "bytes": 62090
+        }
+      ]
+    },
+    {
+      "source": "/product-images/porta-side-cabinet-oak.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/9fb39e900153-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/9fb39e900153-480.webp",
+          "bytes": 15762
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/9fb39e900153-960.webp",
+          "bytes": 47394
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/9fb39e900153-1024.webp",
+          "bytes": 54782
+        }
+      ]
+    },
+    {
+      "source": "/product-images/porta-side-cabinet-virginia-walnut.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/d65f809b1059-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/d65f809b1059-480.webp",
+          "bytes": 16290
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/d65f809b1059-960.webp",
+          "bytes": 55438
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/d65f809b1059-1024.webp",
+          "bytes": 69674
+        }
+      ]
+    },
+    {
+      "source": "/product-images/eira-sideboard.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/db5aeed323a1-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/db5aeed323a1-480.webp",
+          "bytes": 30192
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/db5aeed323a1-960.webp",
+          "bytes": 103864
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/db5aeed323a1-1024.webp",
+          "bytes": 117788
+        }
+      ]
+    },
+    {
+      "source": "/product-images/orel-sideboard.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/beedca64895b-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/beedca64895b-480.webp",
+          "bytes": 18832
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/beedca64895b-960.webp",
+          "bytes": 77120
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/beedca64895b-1024.webp",
+          "bytes": 92462
+        }
+      ]
+    },
+    {
+      "source": "/product-images/vaela-sideboard-grey-oak.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/e06c65e111cf-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/e06c65e111cf-480.webp",
+          "bytes": 34100
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/e06c65e111cf-960.webp",
+          "bytes": 122764
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/e06c65e111cf-1024.webp",
+          "bytes": 144898
+        }
+      ]
+    },
+    {
+      "source": "/product-images/dalen-dresser-with-stool-and-mirror.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/8226b54f4e02-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/8226b54f4e02-480.webp",
+          "bytes": 23714
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/8226b54f4e02-960.webp",
+          "bytes": 86240
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/8226b54f4e02-1024.webp",
+          "bytes": 101956
+        }
+      ]
+    },
+    {
+      "source": "/product-images/legno-dining-bench-14m-claro-walnut.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/e1cfe2dfc08d-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/e1cfe2dfc08d-480.webp",
+          "bytes": 21042
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/e1cfe2dfc08d-960.webp",
+          "bytes": 78808
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/e1cfe2dfc08d-1024.webp",
+          "bytes": 91602
+        }
+      ]
+    },
+    {
+      "source": "/product-images/legno-dining-bench-14m-wood.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/869316d15b70-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/869316d15b70-480.webp",
+          "bytes": 16282
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/869316d15b70-960.webp",
+          "bytes": 66474
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/869316d15b70-1024.webp",
+          "bytes": 77192
+        }
+      ]
+    },
+    {
+      "source": "/product-images/lodi-dining-chair-claro-walnutgrey-set-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/ee1e9e1d606b-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/ee1e9e1d606b-480.webp",
+          "bytes": 19924
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/ee1e9e1d606b-960.webp",
+          "bytes": 52554
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/ee1e9e1d606b-1024.webp",
+          "bytes": 57870
+        }
+      ]
+    },
+    {
+      "source": "/product-images/lodi-dining-chair-woodgrey-set-of-2.jpg",
+      "width": 1024,
+      "height": 1280,
+      "fallback": "/images/responsive/6388889c93d3-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/6388889c93d3-480.webp",
+          "bytes": 22754
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/6388889c93d3-960.webp",
+          "bytes": 90466
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/6388889c93d3-1024.webp",
+          "bytes": 109442
+        }
+      ]
+    },
+    {
+      "source": "/images/bask/ChatGPT_Image_Oct_2_2025_10_29_04_AM-ftez3v.jpg",
+      "width": 1024,
+      "height": 1024,
+      "fallback": "/images/responsive/b87ea8ee7d7d-960.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/b87ea8ee7d7d-480.webp",
+          "bytes": 20974
+        },
+        {
+          "width": 960,
+          "src": "/images/responsive/b87ea8ee7d7d-960.webp",
+          "bytes": 92828
+        },
+        {
+          "width": 1024,
+          "src": "/images/responsive/b87ea8ee7d7d-1024.webp",
+          "bytes": 113780
+        }
+      ]
+    },
+    {
+      "source": "/images/bask/JBP3064_2_900x-5vj00m.jpg",
+      "width": 900,
+      "height": 600,
+      "fallback": "/images/responsive/584c9b611f08-900.webp",
+      "variants": [
+        {
+          "width": 480,
+          "src": "/images/responsive/584c9b611f08-480.webp",
+          "bytes": 14632
+        },
+        {
+          "width": 900,
+          "src": "/images/responsive/584c9b611f08-900.webp",
+          "bytes": 51700
+        }
+      ]
+    }
+  ]
+}

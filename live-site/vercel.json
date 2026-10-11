@@ -1,5 +1,42 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
-  "rewrites": [{ "source": "/favicon.ico", "destination": "/favicon.svg" }]
+  "rewrites": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/favicon.svg"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/products/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/products/:path*/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/:path*/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/lookbook/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/lookbook/:path*/",
+      "destination": "/shop/",
+      "permanent": true
+    }
+  ]
 }
