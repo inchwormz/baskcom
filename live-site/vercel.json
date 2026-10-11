@@ -9,32 +9,32 @@
   ],
   "redirects": [
     {
-      "source": "/products/:path*",
+      "source": "/products/",
       "destination": "/shop/",
       "permanent": true
     },
     {
-      "source": "/about-us/:path*",
+      "source": "/products/:path*/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/",
       "destination": "/about/",
       "permanent": true
     },
     {
-      "source": "/lookbook/:path*",
-      "destination": "/shop/",
-      "permanent": true
-    },
-    {
-      "source": "/products.html",
-      "destination": "/shop/",
-      "permanent": true
-    },
-    {
-      "source": "/about-us.html",
+      "source": "/about-us/:path*/",
       "destination": "/about/",
       "permanent": true
     },
     {
-      "source": "/lookbook.html",
+      "source": "/lookbook/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/lookbook/:path*/",
       "destination": "/shop/",
       "permanent": true
     }
