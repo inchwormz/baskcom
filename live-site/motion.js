@@ -23,33 +23,65 @@
     if (!element || reduced.matches) return null;
     return element.animate(frames, { easing: out, ...options });
   }
+  const header = document.querySelector('.bask-header');
+  const menu = document.querySelector('.bask-menu-toggle');
+  const menuPanel = document.querySelector('#bask-mobile-menu');
+  const collections = document.querySelector('.bask-collections-toggle');
+  const collectionsPanel = document.querySelector('#bask-collections');
+  const mobileNavigation = matchMedia('(max-width:1100px)');
+  let pinnedCollections = false, closeTimer, savedOverflow;
+  const backgroundState = new Map();
   function toggle(trigger, panel, open) {
     trigger.setAttribute('aria-expanded', String(open));
     panel.classList.toggle('is-open', open);
     panel.inert = !open;
   }
-  const menu = document.querySelector('.bask-menu-toggle');
-  const menuPanel = document.querySelector('#bask-mobile-menu');
-  const collections = document.querySelector('.bask-collections-toggle');
-  const collectionsPanel = document.querySelector('#bask-collections');
-  menu?.addEventListener('click', () => {
-    const open = menu.getAttribute('aria-expanded') !== 'true';
-    toggle(menu, menuPanel, open);menu.firstElementChild.textContent = open ? 'Close' : 'Menu';
+  function setMenu(open, focus = false) {
+    if (open && !mobileNavigation.matches) return;
+    const wasOpen = menu.getAttribute('aria-expanded') === 'true';
+    toggle(menu, menuPanel, open);
+    menu.querySelector('.bask-menu-label').textContent = open ? 'Close' : 'Menu';
+    header.classList.toggle('has-mobile-menu', open);
+    if (open && !wasOpen) {
+      savedOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      all('main,.bask-footer').forEach(element => { backgroundState.set(element,element.inert);element.inert=true; });
+      if (focus) menuPanel.querySelector('a').focus();
+    } else if (!open && wasOpen) {
+      document.body.style.overflow = savedOverflow || '';
+      backgroundState.forEach((inert,element) => {element.inert=inert;});backgroundState.clear();
+    }
+  }
+  function setCollections(open, pinned = false) {
+    clearTimeout(closeTimer);pinnedCollections = open && pinned;
+    toggle(collections,collectionsPanel,open && !mobileNavigation.matches);
+  }
+  menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true',true));
+  collections.addEventListener('click', () => {
+    const open = collections.getAttribute('aria-expanded') === 'true';
+    setCollections(!open || !pinnedCollections,true);
   });
-  collections?.addEventListener('click', () => toggle(collections, collectionsPanel, collections.getAttribute('aria-expanded') !== 'true'));
-  all('#bask-collections a,#bask-mobile-menu a').forEach(link=>link.addEventListener('click',()=>{toggle(menu,menuPanel,false);menu.firstElementChild.textContent='Menu';toggle(collections,collectionsPanel,false);}));
-  const products = document.querySelector('.bask-products');
-  products?.addEventListener('pointerenter', () => { if (!coarse.matches) toggle(collections, collectionsPanel, true); });
-  document.querySelector('.bask-header')?.addEventListener('pointerleave', () => { if (!coarse.matches) toggle(collections, collectionsPanel, false); });
-  document.addEventListener('click', event => { if (!event.target.closest('.bask-header')) { toggle(menu, menuPanel, false);menu.firstElementChild.textContent = 'Menu';toggle(collections, collectionsPanel, false); } });
-  document.addEventListener('keydown', event => {
-    if (event.key !== 'Escape') return;
+  all('#bask-collections a,#bask-mobile-menu a').forEach(link => link.addEventListener('click',() => {setMenu(false);setCollections(false);}));
+  document.querySelector('.bask-products').addEventListener('pointerenter',event => {if(event.pointerType==='mouse' && !mobileNavigation.matches){clearTimeout(closeTimer);if(!pinnedCollections)setCollections(true);}});
+  header.addEventListener('pointerenter',()=>clearTimeout(closeTimer));
+  header.addEventListener('pointerleave',event => {if(event.pointerType==='mouse' && !pinnedCollections)closeTimer=setTimeout(()=>setCollections(false),180);});
+  document.querySelector('.bask-menu-backdrop').addEventListener('click',()=>{setMenu(false);menu.focus();});
+  document.addEventListener('click',event => {if(!event.target.closest('.bask-header')){setMenu(false);setCollections(false);}});
+  document.addEventListener('keydown',event => {
     const menuOpen = menu.getAttribute('aria-expanded') === 'true';
     const collectionsOpen = collections.getAttribute('aria-expanded') === 'true';
-    if (!menuOpen && !collectionsOpen) return;
-    const active = menuOpen ? menu : collections;
-    toggle(menu, menuPanel, false);menu.firstElementChild.textContent = 'Menu';toggle(collections, collectionsPanel, false);active.focus();
+    if(event.key==='Escape' && (menuOpen || collectionsOpen)) {
+      event.preventDefault();setMenu(false);setCollections(false);(menuOpen?menu:collections).focus();
+    } else if(event.key==='Tab' && menuOpen) {
+      const focusable=all('a[href],button',header).filter(e=>e.tabIndex>=0 && !e.closest('[inert]') && e.getClientRects().length && getComputedStyle(e).visibility==='visible');
+      const first=focusable[0],last=focusable.at(-1);
+      if(event.shiftKey && document.activeElement===first){event.preventDefault();last.focus();}
+      else if(!event.shiftKey && document.activeElement===last){event.preventDefault();first.focus();}
+    }
   });
+  header.addEventListener('focusout',()=>setTimeout(()=>{if(!header.contains(document.activeElement)){setCollections(false);}},0));
+  mobileNavigation.addEventListener('change',()=>{setMenu(false);setCollections(false);});
+
   function split(element) {
     const text = element.textContent.trim();
     element.setAttribute('aria-label', text);element.textContent = '';
@@ -127,10 +159,6 @@
   const search = document.querySelector('#bask-product-search');
   let selectedCategories = [], requestedCollection = null;
   const normalize = text => text.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,'').replace(/ø/g,'o').replace(/æ/g,'ae');
-  const editorialTiles = [[1,1],[3,1],[1,2],[3,1],[2,1],[3,1],[1,2],[1,1],[3,1],[1,1],[2,1],[2,1],[3,1],[1,2],[1,1]];
-  function tilePositions() {
-    productCards.filter(card=>!card.hidden).forEach((card,index)=>{const [start,span]=editorialTiles[index%editorialTiles.length];card.style.setProperty('--tile-start',start);card.style.setProperty('--tile-span',span);});
-  }
   function filterProducts() {
     const query = normalize(search?.value || '');let count = 0;
     productCards.forEach(card => { const show = (!selectedCategories.length || selectedCategories.includes(card.dataset.productCategory)) && normalize(card.dataset.productName).includes(query);card.hidden = !show;if(show)count++; });
@@ -140,7 +168,6 @@
       empty.textContent = `Ask Bask about the ${requestedCollection} collection. `;
       const link = document.createElement('a');link.textContent = 'Email Bask ↗';link.href = `mailto:hello@baskobjects.co.nz?subject=${encodeURIComponent('Collection enquiry: '+requestedCollection)}`;empty.append(link);
     }
-    tilePositions();
   }
   function clearFilterHash() {
     if(location.hash)history.replaceState(history.state,'',location.pathname+location.search);
@@ -149,19 +176,20 @@
   search?.addEventListener('input',()=>{requestedCollection=null;clearFilterHash();filterProducts();});
   const filterDetails = document.querySelector('.bask-filters details');
   if (filterDetails) {
-    const compactFilters = matchMedia('(max-width:1023px)');filterDetails.open=!compactFilters.matches;
+    const compactFilters = matchMedia('(max-width:1100px)');filterDetails.open=!compactFilters.matches;
     compactFilters.addEventListener('change',event=>{filterDetails.open=!event.matches;});
     const rooms = {coffee:['Coffee Table'],dining:['Dining Table','Dining Chair','Bench'],bedside:['Bedside Table'],bedroom:['Bedside Table','Dressing Table','Wardrobe'],living:['Coffee Table','Side Table','Sideboard','Display Cabinet Rack'],office:['Office Furniture','Office Chair'],shoe:['Shoe Cabinet'],storage:['Sideboard','Wardrobe','Display Cabinet Rack','Shoe Cabinet'],dressers:['Dressing Table'],desks:['Office Furniture']};
     const collectionNames = {orel:'Ørel',halda:'Halda',vaela:'Væla',niso:'Niso',eira:'Eira',ansel:'Ånsel',vek:'Vek',mira:'Mira',iselin:'Iselin',nela:'Nelä',solve:'Sølve',bram:'Bråm',tova:'Tova'};
     const aliases = {arezzo:'orel',corsi:'halda',platsa:'vaela',turin:'niso',stoven:'eira',polia:'ansel',modena:'vek',apulia:'mira',pavia:'iselin',viviere:'nela',ovada:'solve',busca:'bram'};
     function hashFilter() {
       let key;try {key=decodeURIComponent(location.hash.slice(1));}catch{return;}key=aliases[key]||key;
+      if (!key) { selectedCategories=[];requestedCollection=null;search.value='';filterButtons.forEach(button=>button.setAttribute('aria-pressed',String(!button.dataset.filterCategory)));filterProducts();return; }
       if (!rooms[key] && !collectionNames[key]) return;
       selectedCategories=rooms[key]||[];requestedCollection=collectionNames[key]||null;search.value=requestedCollection||'';
       filterButtons.forEach(button=>button.setAttribute('aria-pressed',String(selectedCategories.length?selectedCategories.includes(button.dataset.filterCategory):!button.dataset.filterCategory)));
       filterProducts();
     }
-    tilePositions();hashFilter();addEventListener('hashchange',hashFilter);
+    hashFilter();addEventListener('hashchange',hashFilter);
   }
   const reveal = new IntersectionObserver(entries => entries.forEach(entry => {
     if(!entry.isIntersecting)return;const element=entry.target;

@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/lucide-icons/lucide",
+  "commit": "70562c1ee1c4fdcf736fe97bc893fb8511927934",
+  "icons": [
+    "bed-double",
+    "sofa",
+    "utensils",
+    "briefcase-business",
+    "coffee",
+    "lamp",
+    "archive",
+    "layout-grid",
+    "menu",
+    "x",
+    "chevron-down",
+    "search",
+    "mail",
+    "arrow-up-right",
+    "sliders-horizontal",
+    "check",
+    "armchair",
+    "table",
+    "book-open",
+    "door-open",
+    "truck",
+    "heart",
+    "package",
+    "arrow-right",
+    "plus",
+    "minus"
+  ],
+  "source": "Official source SVGs, used as local static symbols. No remote runtime dependency."
+}
