@@ -27,7 +27,8 @@
     "package",
     "arrow-right",
     "plus",
-    "minus"
+    "minus",
+    "shopping-cart"
   ],
   "source": "Official source SVGs, used as local static symbols. No remote runtime dependency."
 }
