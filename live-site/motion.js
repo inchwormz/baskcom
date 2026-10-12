@@ -16,9 +16,14 @@
     }));
   }
   const all = (selector, owner = document) => [...owner.querySelectorAll(selector)];
-  all('.bask-header__nav').forEach(link => {
-    if (link.getAttribute('href') === location.pathname) link.setAttribute('aria-current', 'page');
-  });
+  function syncPrimaryNav() {
+    all('.bask-header__nav,#bask-mobile-menu a').forEach(link => {
+      const url=new URL(link.getAttribute('href'),location.href);
+      const active=url.pathname===location.pathname && (url.hash ? url.hash===location.hash : (url.pathname!=='/shop/' || !location.hash));
+      if(active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
+    });
+  }
+  syncPrimaryNav();addEventListener('hashchange',syncPrimaryNav);
   function animate(element, frames, options) {
     if (!element || reduced.matches) return null;
     return element.animate(frames, { easing: out, ...options });
@@ -170,7 +175,7 @@
     }
   }
   function clearFilterHash() {
-    if(location.hash)history.replaceState(history.state,'',location.pathname+location.search);
+    if(location.hash)history.replaceState(history.state,'',location.pathname+location.search);syncPrimaryNav();
   }
   filterButtons.forEach(button=>button.addEventListener('click',()=>{selectedCategories=button.dataset.filterCategory?[button.dataset.filterCategory]:[];requestedCollection=null;clearFilterHash();filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filterProducts();}));
   search?.addEventListener('input',()=>{requestedCollection=null;clearFilterHash();filterProducts();});
