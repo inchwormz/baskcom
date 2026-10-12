@@ -101,7 +101,8 @@ html { scroll-padding-top:calc(var(--bask-nav-height) + var(--bask-nav-gap) + 20
   .bask-header .bask-menu-toggle { padding:0 10px; }
   .bask-header .bask-locale { flex:0 0 40px; order:3; }
   .bask-collections { display:none; }
-  .bask-mobile-menu { display:block; overflow-y:auto; overscroll-behavior:contain; max-height:calc(100dvh - var(--bask-nav-height) - var(--bask-nav-gap) - 12px); }
+  .bask-mobile-menu { display:block; position:absolute; top:100%; left:0; right:0; border:1px solid #403a34; background:#f6f1eb; opacity:0; visibility:hidden; transform:translateY(-12px); transition:opacity 180ms var(--motion-out),transform 260ms var(--motion-out),visibility 0s 260ms; overflow-y:auto; overscroll-behavior:contain; max-height:calc(100dvh - var(--bask-nav-height) - var(--bask-nav-gap) - 12px); }
+  .bask-mobile-menu.is-open { opacity:1; visibility:visible; transform:none; transition-delay:0s; }
   .bask-catalogue { grid-template-columns:1fr; gap:28px; }
   .bask-filters { position:static; max-height:none; overflow:visible; }
   .bask-filters summary { display:flex; align-items:center; gap:10px; padding:16px 18px; font-size:14px; min-height:56px; }
